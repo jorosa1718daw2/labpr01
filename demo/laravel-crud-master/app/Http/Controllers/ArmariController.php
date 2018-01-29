@@ -60,7 +60,7 @@ class ArmariController extends  Controller
         return view('armarisview.create');
     }
 
-    public function store(Requests\ArticleRequest $request) {
+    public function store(Requests\ArmariRequest $request) {
 
         /*
           $input = Request::all();
@@ -69,8 +69,8 @@ class ArmariController extends  Controller
           Article::create($input);
          */
 
-        $request['users_id'] = Auth::id();
-        Armari::create($request->all());
+        $request['id'] = Auth::id();
+        Armari_A::create($request->all());
 
         //Session::flash('flash_message', 'Article has been created!');
         flash()->success('ArmariA has been created!');

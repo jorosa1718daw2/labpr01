@@ -17,6 +17,10 @@
                             <th>Stock Inicial</th>
                             <th>Stock Actual</th>
                             <th>Proveedor</th>
+                            <th>Edit</th>
+                            <th>Delete</th>
+
+
                         </tr>
                         </thead>
                         <tbody>
