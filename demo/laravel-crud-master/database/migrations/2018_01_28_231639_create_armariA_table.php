@@ -18,7 +18,7 @@ class CreateArmariATable extends Migration
 
         Schema::create('Armari_A', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('users_id')->unsigned();
+            $table->integer('user_id')->unsigned();
             $table->string('nom_armari');
             $table->string('nom_producte');
             $table->integer('stock_inicial');
@@ -27,6 +27,7 @@ class CreateArmariATable extends Migration
             $table->integer('referencia_proveedor');
             $table->string('marca_equip');
             $table->integer('num_lot');
+
             $table->foreign('users_id')
                 ->references('users_id')
                 ->on('users')

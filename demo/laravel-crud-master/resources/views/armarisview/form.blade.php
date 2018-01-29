@@ -23,6 +23,20 @@
 </div>
 
 <div class="form-group">
+    {!! Form::label('referencia_proveedor', ' Referencia Proveedor:') !!}
+    {!! Form::text('referencia_proveedor', null, ['class' => 'form-control']) !!}
+</div>
+<div class="form-group">
+    {!! Form::label('marca_equip', ' Marca equipo:') !!}
+    {!! Form::text('marca_equip', null, ['class' => 'form-control']) !!}
+</div>
+<div class="form-group">
+    {!! Form::label('num_lot', ' Numero Lote:') !!}
+    {!! Form::text('num_lot', null, ['class' => 'form-control']) !!}
+</div>
+
+
+<div class="form-group">
     {!! Form::submit($submitButtonName, ['class' => 'btn btn-primary']) !!}
 </div>
 

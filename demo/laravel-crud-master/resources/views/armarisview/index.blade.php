@@ -17,6 +17,9 @@
                             <th>Stock Inicial</th>
                             <th>Stock Actual</th>
                             <th>Proveedor</th>
+                            <th>Referencia Proveedor</th>
+                            <th>Marca Equipo</th>
+                            <th>Numero Lote</th>
                             <th>Edit</th>
                             <th>Delete</th>
 
@@ -29,9 +32,15 @@
                             <tr>
                                 <td>{{ $armari->nom_armari }}</td>
                                 <td>{{ $armari->nom_producte }}</td>
-                                <td>{{ $armari->stock_inical }}</td>
+                                <td>{{ $armari->stock_inicial }}</td>
                                 <td>{{ $armari->stock_actual}}</td>
                                 <td>{{ $armari->proveedor }}</td>
+                                <td>{{ $armari->referencia_proveedor }}</td>
+                                <td>{{ $armari->marca_equip }}</td>
+                                <td>{{ $armari->num_lot }}</td>
+
+
+
                                 <td>
                                     <a href="{{ url("armarisview/$armari->id/edit")}}" class="btn btn-info" role="button">edit</a>
                                 </td>
