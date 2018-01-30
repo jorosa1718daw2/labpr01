@@ -25,20 +25,21 @@
                 <li><a href="{{ url('/home') }}">Dashboard</a></li>
 
                 @if (!Auth::guest())
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Articles <b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="{{ url('articles/create') }}">New Article</a></li>
-                        <li><a href="{{ url('articles') }}">Articles List</a></li>
-                        <li class="divider"></li>
-                        <li><a href="{{ url('datatable') }}">Articles List (Datatables)</a></li>
-                    </ul>
-                </li>
+
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Armarios <b class="caret"></b></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Armario A <b class="caret"></b></a>
                         <ul class="dropdown-menu">
-                            <li><a href="{{ url('armarisview/create') }}">Nuevo Armario</a></li>
-                            <li><a href="{{ url('armarisview/') }}">Lista de Armarios</a></li>
+                            <li><a href="{{ url('armarisview/create') }}">Añadir a  Armario A</a></li>
+                            <li><a href="{{ url('armarisview/') }}">Lista de Armario A</a></li>
+                            <li class="divider"></li>
+                            <li><a href="{{ url('datatable') }}">Otros</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Armario B <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="{{ url('armaribview/create') }}">Nuevo Armario B</a></li>
+                            <li><a href="{{ url('armaribview/') }}">Lista de Armario B</a></li>
                             <li class="divider"></li>
                             <li><a href="{{ url('datatable') }}">Otros</a></li>
                         </ul>

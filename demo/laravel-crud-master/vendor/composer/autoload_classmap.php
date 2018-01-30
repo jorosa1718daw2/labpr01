@@ -6,8 +6,11 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'CerateArmaricTable' => $baseDir . '/database/migrations/2018_01_29_221544_cerate_armaric_table.php',
+    'CerateArmaridTable' => $baseDir . '/database/migrations/2018_01_30_131238_cerate_armarid_table.php',
     'Cpdf' => $vendorDir . '/dompdf/dompdf/lib/Cpdf.php',
     'CreateArmariATable' => $baseDir . '/database/migrations/2018_01_28_231639_create_armariA_table.php',
+    'CreateArmariBTable' => $baseDir . '/database/migrations/2018_01_29_164530_create_ArmariB_table.php',
     'CreateArticlesTable' => $baseDir . '/database/migrations/2016_11_06_045429_create_articles_table.php',
     'CreateBearsTable' => $baseDir . '/database/migrations/2014_10_12_100000_create_bears_table.php',
     'CreatePasswordResetsTable' => $baseDir . '/database/migrations/2014_10_12_100000_create_password_resets_table.php',

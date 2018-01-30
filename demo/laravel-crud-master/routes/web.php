@@ -37,6 +37,7 @@ Route::get('/proveedor', function(){
 Route::resource('articles', 'ArticlesController');
 Route::resource('bearsview', 'BearsController');
 Route::resource('armarisview', 'ArmariController');
+Route::resource('armaribview', 'ArmariBController');
 
 
 /*

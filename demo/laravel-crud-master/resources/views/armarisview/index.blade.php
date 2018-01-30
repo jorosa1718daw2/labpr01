@@ -4,7 +4,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h2>Lista de Armarios <a href="{{ url('armarisview/create') }}" style="float: right;font-size: 18px;">Añadir Armario</a></h2>
+                <h2>Lista de Armario A <a href="{{ url('armarisview/create') }}" style="float: right;font-size: 18px;">Añadir a  Armario A</a></h2>
 
 
                 @if(count($armaris))
